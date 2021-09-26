@@ -14,7 +14,7 @@ allprojects {
 #### 添加依赖项
 ```
 dependencies {
-	        implementation 'com.github.keluokeda:RxImagePicker:1.0.1'
+	        implementation 'com.github.keluokeda:KePermission:v1.0.0'
 	}
 ```
 
