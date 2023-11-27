@@ -5,6 +5,7 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.os.Parcelable
+import android.widget.TextView
 import androidx.activity.result.contract.ActivityResultContract
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
@@ -20,6 +21,8 @@ class KePermissionActivity : AppCompatActivity() {
         val requestPermissionInfo = intent.getParcelableExtra<RequestPermissionInfo>("info")!!
 
 
+        findViewById<TextView>(R.id.title).text = requestPermissionInfo.title
+        findViewById<TextView>(R.id.desc).text = requestPermissionInfo.desc
         val launcher =
             registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) { result ->
 

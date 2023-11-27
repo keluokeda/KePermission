@@ -86,7 +86,7 @@ class MainActivity : AppCompatActivity() {
                 launcher.launch(
                     RequestPermissionInfo(
                         "",
-                        listOf(Manifest.permission.ACCESS_FINE_LOCATION),
+                        listOf(Manifest.permission.READ_CONTACTS),
                         "相机使用权限说明:",
                         "为了使用相机"
                     )
